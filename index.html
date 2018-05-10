@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+<title>Number Guesser</title>
 </head>
 <body>
-  <nav>
+  <nav role="nav">
   <h1>Number <span id="guesserWord">Guesser</span></h1> 
-
   </nav>
   <center>
-  <main>
-  <form role ="guessNumber">
-  <input id="inputField" name="number-guess-entry-box" type="number" value="" placeholder="Enter your guess">
-  <br>
-  <button id="guessButton" name="guess-button" value="guess" disabled="true" >Guess</button>
-  <button id="clearButton" name='clear-button' disabled="true" type="button">Clear</button>
-  </form>
-  <section id="lastGuessText"></section>
-  
-  <div id="guessReadBack" name"reads-back-last-guess"></div>
-  <h2 id="displaySecret"></h2>
-  <form>
-  <section id="hint" name="value-hint"></section>
-  
-
-  <section id="lowerHalf">
- <button id="resetButton" name="reset-button" disabled="true">Reset</button> 
-  </form>
-  
-
-<fieldset id="adjustBox" name="range-adjustment-option">
-  <legend id="rangeText"> Default Range</legend>
-  <label>Minimum</label>
-  <input type="number" name="minimum-range-selector" id="min" value="1">
-  <label>Maximum</label>
-  <input type="number" id="max" name="max-range-selector" value="100">
-  
-  <button id="adjustButton" disable="true" name="adjust-Button">Adjust</button>
-
-</fieldset></center>
-
-
-  <script src="index.js"> 
-    
-  </script>
+    <main>
+    <form>
+      <input id="inputField" role="number-guess-entry-box" type="number" value="" placeholder="Enter your guess">
+      <br>
+      <button id="guessButton" role="submit-guess-button" value="guess" disabled="true">Guess</button>
+      <button id="clearButton" name='clear-button' disabled="true" type="button">Clear</button>
+    </form>
+    <section id="lastGuessText"></section>
+    <div id="guessReadBack" role="reads-back-last-guess">
+    </div>
+    <h2 id="displaySecret">
+    </h2>
+    <form>
+      <section id="hint" role="value-hint">
+      </section>
+      <section id="lowerHalf">
+      <button id="resetButton" role="reset-button" disabled="true">Reset</button> 
+    </form>
+  <fieldset id="adjustBox" name="range-adjustment-option">
+    <legend id="rangeText"> Default Range</legend>
+      <label>Minimum</label>
+      <input type="number" name="minimum-range-selector" id="min" value="1">
+      <label>Maximum</label>
+      <input type="number" id="max" name="max-range-selector" value="100">
+     <button id="adjustButton" disable="true" name="adjust-Button">Adjust</button>
+  </fieldset>
+</center>
+<script src="index.js"> 
+</script>
 </section>
-  </main>
- </body>
+</main>
+</body>
 </html>
 
     

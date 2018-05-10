@@ -14,10 +14,7 @@
 adjustButton.addEventListener('click', function() {
   checkRange();
   event.preventDefault(); 
- 
-})
-
-
+ })
 
 clearButton.addEventListener('click', function() {
   document.querySelector("#inputField").value = "";
@@ -36,19 +33,16 @@ userGuess.addEventListener('keyup', function(){
     guessSubmit.disabled = true;
     clearButton.disabled = true;
     resetButton.disabled = true;
-    adjustButton.disabled = true;
   } else {
     clearButton.disabled = false;
     guessSubmit.disabled = false;
     resetButton.disabled = false;
-    adjustButton.disabled = false;
   }
 })
   
   function checkRange(){
     var minimum = minRange.value;
     var maximum = maxRange.value;
-    var topText = lastGuessText;
     if (minimum > maximum || maximum === minimum || minimum < 1 || maximum < 1) {
        customRangeText.innerText = "Invalid Range!";
   } else {  defineRange();
@@ -98,19 +92,6 @@ function levelUp (minimum,maximum){
   return secretNumber;
 }
 
-function minDown (minimum){
-  var minimum = parseInt(minRange.value);
-  if (minimum > 11){
-    var newMin = minimum - 10;
-    minRange.value = newMin;
-    return minRange;
-} else if (minimum > 1 && minimum < 10) { 
-    minRange.value = 1; 
-} else {
-    return minRange;
-}
-}
-
 function maxUp (maximum){
   var maximum = parseInt(maxRange.value);
   var newMax = maximum + 10;
@@ -118,6 +99,19 @@ function maxUp (maximum){
   return maxRange;
 }
  
+function minDown (minimum){
+  var minimum = parseInt(minRange.value);
+  if (minimum > 11){
+    var newMin = minimum - 10;
+    minRange.value = newMin;
+    return minRange;
+  } else if (minimum > 1 && minimum < 10) { 
+    minRange.value = 1; 
+  } else {
+    return minRange;
+  }
+}
+
 
 
 
