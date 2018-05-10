@@ -14,31 +14,22 @@ button {
   height: 35px;
   margin-left: 30px;
   padding: 0px;
-  width:  200px;
   text-align: center;
+  width:  200px;
 }
-
-
-
 
 button:disabled {
   background: #D0D2D3;
 }
 
-
-
 button:focus {
   outline:0;
 }
 
-
-
-
 fieldset {
-  width: 450px;
+  margin: 20px 0px 0px 40px;
   left: 40%;
-  margin-left: 40px;
-  margin-top: 20px;
+  width: 450px;
 }
 
 h1 {
@@ -46,7 +37,6 @@ h1 {
   text-align: center;
   vertical-align: middle;
 }
-
 
 label {
   display: inline-block;
@@ -65,7 +55,6 @@ nav {
   font-size: 40px;
   height: 25%;
   margin: -8px;
-  margin-left: -20px;
   text-align: center;
   vertical-align: middle;
   width: 110%;
@@ -77,61 +66,48 @@ nav {
   margin-top: 20px;
 }
 
+#adjustButton:hover:disabled {
+  background: #D0D2D3;
+ }
+
 #adjustRange:hover {
-  color: #FFFFFF;
   background-color: #EB008B;
   border-radius: 30px;
+  color: #FFFFFF;
 }
-
 
 #clearButton {
   margin-left: 80px;
 }
 
-
 #clearButton:hover {
-  color: #FFFFFF;
   background-color: #EB008B;
   border-radius: 30px;
+  color: #FFFFFF;
 }
+
+#clearButton:hover:disabled {
+  background: #D0D2D3;
+ }
 
 #guessButton {
   margin-left: 90px;
 }
 
-
 #guessButton:hover {
-  color: #FFFFFF;
   background-color: #EB008B;
   border-radius: 30px;
-
+  color: #FFFFFF;
 }
 
 #guessButton:hover:disabled {
   background: #D0D2D3;
  }
 
-
-#clearButton:hover:disabled {
-  background: #D0D2D3;
- }
-
- #resetButton:hover:disabled {
-  background: #D0D2D3;
- }
-
-#adjustButton:hover:disabled {
-  background: #D0D2D3;
- }
-
-
-
-
 #guessReadBack {
   color: #ED458B;
+  font-size: 70px;
   font-weight: lighter;
-  font-size: 150px;
-  margin: 1px;
 }
 
 #guesserWord {
@@ -143,19 +119,19 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
   height: 35px;
-  margin: 5% 0% 5% 9%;
+  margin: 5% 0% 5% 6%;
   width: 34.5%;
-
 }
-
 
 #lastGuessText {
-
  padding: 20px; 
-
 }
 
-
+#lowerHalf {
+  left: 440px;
+  position: absolute;
+  top: 70%;
+}
 
 #min, #max {
   display: inline;
@@ -164,37 +140,19 @@ nav {
   width: 70px;
 }
 
+#resetButton {
+  display: block;
+  margin-top: 5%;
+}
 
 
 #resetButton:hover {
-  color: #FFFFFF;
   background-color: #EB008B;
   border-radius: 30px;
-  
+  color: #FFFFFF;
 }
 
-
-#guessReadBack {
-  font-size: 40pt;
-    
-
-}
-
-
-#readGap {
-  margin-bottom: 8%;
-}
-
-
-
-#lowerHalf {
-  
-  top: 64%;
-  left: 440px;
-  position: absolute;
-
-}
-
-
-
+#resetButton:hover:disabled {
+  background: #D0D2D3;
+ }
 
